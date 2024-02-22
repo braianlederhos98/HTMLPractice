@@ -1,0 +1,31 @@
+/*
+
+Modelo
+
+*/
+
+.seccion1 {
+    width: 600px;
+    margin: 0 auto;
+    border-color: red;
+    border-bottom-color: aqua;
+    border-width: 1px;
+    border-top-width: 10px;
+    border-bottom-width: 4px;
+    border-style: solid;
+    /*border: 2px dashed green;*/
+}
+
+.caja1 {
+   width: 300px;
+   margin: 0 auto; 
+   text-align: center;
+}
+
+.overflow {
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    overflow-y: scroll;
+    overflow-y: auto;
+}

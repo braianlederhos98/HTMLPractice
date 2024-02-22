@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style2.css">
+</head>
+<body>
+    <h1>CSS</h1>
+    <br><br>
+    <div>
+        <h2>Selectores de hijos</h2>
+        <h3>Selectores de hijos directos</h3>
+        <ul class="hijos-directos">
+            <li>Otoño</li>
+            <li>Invierno</li>
+                <ul>
+                    <li>Otoño</li>
+                    <li>Invierno</li>
+                    <li>Primavera</li>
+                    <li>Verano</li>
+                </ul>
+            <li>Primavera</li>
+            <li>Verano</li>
+        </ul>
+        <h3>Selectores de hijos descendientes</h3>
+        <ul class="hijos-descendientes">
+            <li>Otoño</li>
+            <li>Invierno</li>
+            <ul>
+                <li>Otoño</li>
+                <li>Invierno</li>
+                <li>Primavera</li>
+                <li>Verano</li>
+            </ul>
+            <li>Primavera</li>
+            <li>Verano</li>
+        </ul>
+        <br><br>
+        <h3>Selectores de hermanos general</h3>
+        <p>.hermanos-general ~ li</p>
+        <br><p>Aplica a elementos hermanos y que estén consecuentes a este</p>
+        <ul>
+            <li>Otoño</li>
+            <li class="hermanos-general">Invierno</li>
+            <li>Primavera</li>
+            <li>Verano</li>
+        </ul>
+        <br><br>
+        <h3>Selectores de hermanos adyacentes</h3>
+        <br><p>Aplica al elemento hermano consecuente a este</p>
+        <ul>
+            <li>Otoño</li>
+            <li class="hermanos-adyacentes">Invierno</li>
+            <li>Primavera</li>
+            <li>Verano</li>
+        </ul>
+        <br><br><br>
+        <h2>Selectores de atributos</h2>
+        <ul class="atributos">
+            <li><a href="" target="_blank">ABC</a></li>
+            <li><a href="" target="_blank">123</a></li>
+            <li><a href="">ABCD</a></li>
+            <li><a href="">1234</a></li>
+            <li><a href="" target="_blank">ABCDE</a></li>
+        </ul>
+        <br><br>
+        <h2>Selectores de atributos</h2>
+        <ul class="atributos2">
+            <li><a href="#">ABC</a></li>
+            <li><a class="enlace list" href="#num">123</a></li>
+            <li><a href="">ABCD</a></li>
+            <li><a href="#num" class="list-item">1234</a></li>
+            <li><a href="" class="list-item">ABCDE</a></li>
+        </ul>
+    </div>
+    <br><br>
+    <div id="targeteado">
+        <a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements#las_pseudoclases">
+            <h3>Pseudoclases</h3>
+        </a>
+        <p>Son para elementos en determinado estado</p>
+        <br>
+        <p>Ejemplo: :checked, :disabled, :focus, :valid, :invalid, :link,2:active, 3:visited, 4:hover</p>
+    </div>
+    <br><br>
+    <div>
+        <h4>Enlaces</h4>
+        <ul class="enlacesPseudo">
+            <li><a href="#targeteado">Hola</a></li>
+            <li><a href="#targeteado">Chau</a></li>
+            <li><a href="#targeteado">Ciao</a></li>
+        </ul>
+    </div>
+    <br><br>
+    <div>
+        <h3>PseudoElementos</h3>
+        <p>Firt-child and Last-child</p><br>
+        <p>nth-child(2n) o nth-child(2). Uno aplica cada 2, y el otro al 2do</p><br>
+        <p>nth-child(2n+1), aplica cada 2 uno más</p><br>
+        <p>nth-child(even/odd), par impar</p><br>
+        <section class="types">
+            <p>Pruebas pseudo</p>
+            <ul>
+                <li>A</li>
+                <ul>
+                    <p>El de abajo no se pinta porque no es el primer hijo del nodo</p>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                </ul>
+                <li>B</li>
+                <li>C</li>
+            </ul><br>
+            <p>CIAO</p><br>
+            <p>AD10S </p>
+        </section>
+        <section>
+            <h3>Pseudo NOT</h3>
+            <pre>
+.clase *:not(p, .otraclase, #ids) {
+    aplica a todos menos los mencionados
+}                
+            </pre>
+        </section>
+        <section>
+            <h2>PseudoElementos</h2>
+            <p id="misaga" class="misaga">Saga de Braian</p>
+        </section>
+    </div>
+    <br>
+    <div>
+        <h2>Prefijos</h2>
+        <ul>
+            <li>-ms- microsoft prefix</li>
+            <li>-moz- Firefox</li>
+            <li>-webkit-</li>
+        </ul>
+        <p><a href="https://autoprefixer.github.io/">AutoPrefixer</a></p>
+    </div><br><br>
+
+</body>
+</html>

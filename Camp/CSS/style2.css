@@ -1,0 +1,117 @@
+.hijos-directos > li {
+    background-color: aquamarine;
+}
+
+.hijos-descendientes li {
+    /* Incluye todos los que esten dentro*/
+    background-color: aqua;
+}
+
+.hermanos-general ~ li {
+    background-color: brown;
+}
+
+.hermanos-adyacentes + li {
+    background-color: paleturquoise;
+}
+
+.atributos  a[href] {
+    background-color: aqua;
+}
+
+.atributos  a[target="_blank"] {
+    font-weight: 700;
+}
+
+/*El comodin aplica a los que contengan el texto en cuestion*/
+
+.atributos2  a[href*="#"] {
+    font-weight: 700;
+    color: khaki;
+}
+/*El ^ aplica a los que comiencen con el texto en cuestion*/
+
+.atributos2  a[href^="#"] {
+    text-decoration: none;
+}
+
+/*El $ aplica a los que terminan con el texto en cuestion*/
+
+.atributos2  a[href$="num"] {
+    color: black;
+}
+
+/*El ~ aplica a los que contienen con el texto en cuestion separdo por espacios*/
+
+.atributos2  a[class~="enlace"] {
+    color: orange;
+}
+
+/*El | pipe aplica a los que contienen con el texto en cuestion seguido de un guion*/
+
+.atributos2  a[class|="list"] {
+    font-style: italic;
+    
+}
+
+.enlacesPseudo a:link {
+    color: aqua;
+}
+
+.enlacesPseudo a:active {
+    color: red;
+}
+
+.enlacesPseudo a:visited {
+    color: blue;
+}
+
+.enlacesPseudo li:hover {
+    background-color: orangered;
+}
+
+#targeteado:target {
+    background-color: aquamarine;
+}
+
+.types li:first-child {
+    background-color: beige;
+}
+
+.types p:first-of-type {
+    background-color: pink;
+}
+
+.types p:last-of-type {
+    background-color: goldenrod;
+}
+
+.types p:nth-of-type(2) {
+    background-color: hotpink;
+}
+
+.misaga::after {
+    content: "$USD";
+}
+
+.misaga::before {
+    content: "USD$";
+}
+
+.misaga::first-letter {
+    font-size: 12px;
+}
+
+.misaga::first-line {
+    font-size: 32px;
+}
+
+*::selection {
+    background-color: black;
+    color: greenyellow;
+}
+
+*::placeholder {
+    color: green;
+}
+
